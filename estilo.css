@@ -1,0 +1,232 @@
+/* Body colores tema claro y oscuro*/
+.claro {
+    color: black;
+    background-image: url("./img/claro.jpg");
+}
+.oscuro {
+    color: white;
+    background-image: url("./img/oscuro.jpg");
+}
+.invertir {
+    filter: invert(100%);
+}
+.modo {
+    transform: scaleX(-1);
+}
+
+/* Header */
+header {
+    text-align: center;
+}
+#logo {
+    margin: 100px 0px 20px 0px;
+    width: 300px; 
+}
+#modo {
+    margin: 5px;
+    max-height: 24px;
+}
+
+#navegador {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 2px 10px 2px black;
+}
+#navegador 
+div {
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+#navegador 
+div:hover{
+    color:red !important;
+}
+
+/* Main  */
+.titulo {
+    font-family: 'Abril Fatface', cursive;
+}
+article {
+    width: 65%;
+}
+#intro {
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+#intro 
+img {
+    max-width: 600px;
+}
+#intro 
+h1 {
+    color: brown;
+    font-size: 46px;
+}
+#intro 
+p {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+/* Bootstrap*/
+#bootstrap {
+    width: 75%;
+    margin:auto;
+    box-shadow: 2px 2px 10px 2px black;
+}
+
+/* Footer */
+footer {
+    margin-top: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(42, 42, 42, 0.6);
+    box-shadow: 2px 2px 10px 2px black;
+}
+footer
+#titulo-footer {
+    text-align: center;
+    font-size: 30px;
+    
+}
+footer
+.contenedor {
+    margin: auto;
+    width: 70%;
+}
+footer 
+.columna {
+    margin: 10px;
+    max-width: 500px;
+    font-size: 18px;
+}
+footer 
+.pedidos 
+img {
+    max-width: 100px;
+}
+footer
+.redes-sociales {
+    text-align: center;
+    margin: auto;
+}
+footer
+.redes-sociales
+img {
+    max-width: 40px;
+}
+
+/* Google maps */
+.mapouter{
+    position:relative;
+    text-align:right;
+    width:100%;
+    height:180px;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    width:100%;
+    height:180px;}
+.gmap_iframe {
+    height:180px!important;
+}
+
+/* Pagina de Menú*/
+#pagina-menu
+.contenedor{
+    width: 85%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 2px 2px 10px 2px black;
+}
+#pagina-menu
+.texto-encima{
+    position: absolute;
+    font-size: 50px;
+    color: whitesmoke;
+    top: 10px;
+    left: 30px;
+}
+#pagina-menu
+img {
+    width: 100%;
+}
+
+/* Pagina de Menús detallados*/ 
+#menus-main {
+    margin: auto;
+    width: 95%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0px black;
+    background-image: url(./img/anotador.jpg);
+}
+#menus-main, #menus-contenedor {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Pagina de contacto*/
+#formulario {
+    margin: 30px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    box-shadow: 1px 1px 10px 1px black;
+}
+#formulario
+div {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#formulario 
+h4 {
+    font-size: 30px;
+}
+.form-claro {
+    background-image: url("./img/claro-form.jpg");
+}
+.form-oscuro {
+    background-image: url("./img/oscuro-form.jpg");
+}
+
+/* Copy*/
+#copy {
+    text-align: center;
+    margin:20px;
+}
+
+/* Para tablets y computadoras: */
+@media only screen and (min-width: 768px) {
+    
+    /* Pagina de Menú */
+    #pagina-menu {
+        width: 65%;
+        margin-left: 100px;
+    }
+    
+    /* Navegador*/
+    #navegador {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Footer */
+    footer
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr ;
+    }
+}
